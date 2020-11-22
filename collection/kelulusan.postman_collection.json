@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "94704578-4560-4aae-b4a6-9e934d11006d",
+		"name": "kelulusan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "performance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/performance",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"performance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comparasion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/comparasion",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comparasion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "importances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\":\"BUDI\",\n    \"jenis_kelamin\":\"0\",\n    \"status_mahasiswa\":\"1\",\n    \"umur\":\"21\",\n    \"status_nikah\":\"0\",\n    \"ips1\":3.79,\n    \"ips2\":3.29,\n    \"ips3\":2.98,\n    \"ips4\":3.55,\n    \"ips5\":3.75,\n    \"ips6\":3.71,\n    \"ips7\":4,\n    \"ips8\":4,\n    \"ipk\":3.6,\n    \"status_kelulusan\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\":\"BUDI\",\n    \"jenis_kelamin\":\"0\",\n    \"status_mahasiswa\":\"1\",\n    \"umur\":\"21\",\n    \"status_nikah\":\"0\",\n    \"ips1\":3.79,\n    \"ips2\":3.29,\n    \"ips3\":2.98,\n    \"ips4\":3.55,\n    \"ips5\":3.75,\n    \"ips6\":3.71,\n    \"ips7\":4,\n    \"ips8\":4,\n    \"ipk\":3.6,\n    \"status_kelulusan\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/validate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
