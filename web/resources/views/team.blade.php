@@ -24,7 +24,7 @@
     <div class="card">
       <div class="card-header">
         <h4>
-          Resources
+          Tools
         </h4>
       </div>
       <div class="card-body">
@@ -85,6 +85,37 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>
+          Hyperlink
+        </h4>
+      </div>
+      <div class="card-body">
+        <div>
+          Web : <a href="https://sera5.id/internal/project/kelulusan">https://sera5.id/internal/project/kelulusan</a>
+        </div>
+        <div>
+          API : <a target="_blank" href="https://kelulusan-randomforest.herokuapp.com/">https://kelulusan-randomforest.herokuapp.com</a>
+        </div>
+        <div>
+          Repository : <a target="_blank" href="https://github.com/rifqisambas/kelulusan">https://github.com/rifqisambas/kelulusan</a>
+        </div>
+        <div>
+          Dataset : <a target="_blank" href="https://github.com/rifqisambas/kelulusan/blob/master/dataset/datakelulusanmahasiswa.csv">https://github.com/rifqisambas/kelulusan/blob/master/dataset/datakelulusanmahasiswa.csv</a>
+        </div>
+        <div>
+          Postman Collection : <a target="_blank" href="https://github.com/rifqisambas/kelulusan/tree/master/collection">https://github.com/rifqisambas/kelulusan/tree/master/collection</a>
+        </div>
+        <div>
+          Slides : <a target="_blank" href="https://github.com/rifqisambas/kelulusan/blob/master/slides/slides.pdf">https://github.com/rifqisambas/kelulusan/blob/master/slides/slides.pdf</a>
         </div>
       </div>
     </div>
