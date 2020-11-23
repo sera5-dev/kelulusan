@@ -52,4 +52,5 @@ async def get_graphic():
 @app.post("/validate")
 async def validate(prediction: Prediction):
     run(action="validate", data=prediction)
+    # we don't do exception here hehe 😜
     return {"status" : 1, "message" : "data successfully saved"}
