@@ -44,11 +44,18 @@ class ModelController extends Controller
     return $comparison;
   }
 
+  public static function getImage()
+  {
+    $image = json_decode(Http::get(env('API_URL') . '/graphic')->body());
+    return $image;
+  }
+
   public function index()
   {
     $importances = $this->getImportance();
     $performances = $this->getPerformance();
     $comparison = $this->getComparison();
-    return view('model', compact('performances', 'importances', 'comparison'));
+    $image = $this->getImage();
+    return view('model', compact('performances', 'importances', 'comparison', 'image'));
   }
 }

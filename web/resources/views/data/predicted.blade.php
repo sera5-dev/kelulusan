@@ -14,14 +14,14 @@
             <th>Umur</th>
             <th>Status Mahasiswa</th>
             <th>Status Nikah</th>
-            <th>IPS 1</th>
-            <th>IPS 2</th>
-            <th>IPS 3</th>
-            <th>IPS 4</th>
-            <th>IPS 5</th>
-            <th>IPS 6</th>
-            <th>IPS 7</th>
-            <th>IPS 8</th>
+            <th>IP1</th>
+            <th>IP2</th>
+            <th>IP3</th>
+            <th>IP4</th>
+            <th>IP5</th>
+            <th>IP6</th>
+            <th>IP7</th>
+            <th>IP8</th>
             <th>IPK</th>
           </tr>
         </thead>

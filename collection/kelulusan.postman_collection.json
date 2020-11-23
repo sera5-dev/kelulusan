@@ -11,16 +11,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/",
+					"raw": "{{url}}",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						""
+						"{{url}}"
 					]
 				}
 			},
@@ -32,37 +25,29 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/performance",
+					"raw": "{{url}}/performances",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{url}}"
 					],
-					"port": "8000",
 					"path": [
-						"performance"
+						"performances"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "comparasion",
+			"name": "comparison",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/comparasion",
+					"raw": "{{url}}/comparison",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{url}}"
 					],
-					"port": "8000",
 					"path": [
-						"comparasion"
+						"comparison"
 					]
 				}
 			},
@@ -74,7 +59,30 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{url}}/importances",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"importances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "graphic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/graphic",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"graphic"
+					]
 				}
 			},
 			"response": []
@@ -94,14 +102,10 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000",
+					"raw": "{{url}}",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000"
+						"{{url}}"
+					]
 				}
 			},
 			"response": []
@@ -121,15 +125,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/validate",
-					"protocol": "http",
+					"raw": "{{url}}/validate",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{url}}"
 					],
-					"port": "8000",
 					"path": [
 						"validate"
 					]

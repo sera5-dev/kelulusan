@@ -187,5 +187,3 @@ def run(
     elif action == 'validate' :
         data = serialize(data, action)
         append_list_as_row(uri, data)
-
-print(run(action="performance"))

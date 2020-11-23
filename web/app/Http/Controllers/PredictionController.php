@@ -34,6 +34,8 @@ class PredictionController extends Controller
       $data[$attr] = $obj->$attr;
     }
 
+    $obj->status_kelulusan = $request->status;
+
     $data['ipk'] = $obj->ipk;
     $data['status_kelulusan'] = $obj->status_kelulusan;
 

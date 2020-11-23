@@ -1,4 +1,6 @@
+import base64
 from fastapi import FastAPI
+from fastapi.responses import FileResponse 
 from pydantic import BaseModel
 from model import *
 
@@ -25,6 +27,10 @@ app = FastAPI()
 async def root():
     return {"message": "API Sistem Prediksi Kelulusan"}
 
+@app.post("/")
+async def create_prediction(prediction: Prediction):
+    return {"result": run(data=prediction)}
+
 @app.get("/comparison")
 async def get_comparison():
     return run(action="compare") 
@@ -39,11 +45,9 @@ async def get_performance():
 
 @app.get("/graphic")
 async def get_graphic():
-    return "graphic"
-
-@app.post("/")
-async def create_prediction(prediction: Prediction):
-    return {"result": run(data=prediction)}
+    with open("./output/tree.png", "rb") as image_file:
+       encoded_image_string = base64.b64encode(image_file.read())
+    return { "mime" : "image/png", "image": encoded_image_string}
 
 @app.post("/validate")
 async def validate(prediction: Prediction):
