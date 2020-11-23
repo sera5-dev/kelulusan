@@ -9,7 +9,6 @@ from csv import DictWriter
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score, confusion_matrix
 
 from sklearn.preprocessing import LabelEncoder
 
@@ -121,11 +120,6 @@ def append_list_as_row(file_name, list_of_elem):
     with open(file_name, 'a+', newline='') as write_obj:
         csv_writer = writer(write_obj)
         csv_writer.writerow(list_of_elem)
-
-def append_dict_as_row(file_name, dict_of_elem, field_names):
-    with open(file_name, 'a+', newline='') as write_obj:
-        dict_writer = DictWriter(write_obj, fieldnames=field_names)
-        dict_writer.writerow(dict_of_elem)
 
 def serialize(data, action):
     if action == "predict" :
