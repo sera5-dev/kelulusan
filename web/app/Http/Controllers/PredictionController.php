@@ -30,16 +30,35 @@ class PredictionController extends Controller
   {
     $obj = Obj::where('id', $request->id)->first();
 
-    foreach ($this->attr as $attr) {
-      $data[$attr] = $obj->$attr;
-    }
+    $data['nama'] = strtoupper($obj->nama);
+    if ($obj->jenis_kelamin == "LAKI - LAKI") $data['jenis_kelamin'] = 1;
+    else $data['jenis_kelamin'] = 0;
+
+    if ($obj->status_mahasiswa == "MAHASISWA") $data['status_mahasiswa'] = 1;
+    else $data['status_mahasiswa'] = 0;
+
+    $data['umur'] = $obj->umur;
+
+    if ($obj->status_nikah == "MENIKAH") $data['status_nikah'] = 1;
+    else $data['status_nikah'] = 0;
 
     $obj->status_kelulusan = $request->status;
 
-    $data['ipk'] = $obj->ipk;
-    $data['status_kelulusan'] = $obj->status_kelulusan;
 
-    Http::post(env('API_URL'), $data)->body();
+    $data['ips1'] = $obj->ips1;
+    $data['ips2'] = $obj->ips2;
+    $data['ips3'] = $obj->ips3;
+    $data['ips4'] = $obj->ips4;
+    $data['ips5'] = $obj->ips5;
+    $data['ips6'] = $obj->ips6;
+    $data['ips7'] = $obj->ips7;
+    $data['ips8'] = $obj->ips8;
+    $data['ipk'] = $obj->ipk;
+
+    if ($request->status == "TEPAT") $data['status_kelulusan'] = 0;
+    else $data['status_kelulusan'] = 1;
+
+    Http::post(env('API_URL') . '/validate', $data)->body();
 
     $obj->validated = 1;
     $obj->save();
