@@ -8,7 +8,7 @@
         <h4>Entry</h4>
       </div>
       <div class="card-body">
-        {{ $predicted }}
+        {{ $total['predicted'] }}
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
         <h4>Validated</h4>
       </div>
       <div class="card-body">
-        {{ $validated }}
+        {{ $total['validated'] }}
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@
         <h4>Tepat</h4>
       </div>
       <div class="card-body">
-        {{ $tepat }}
+        {{ $total['tepat'] }}
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
         <h4>Terlambat</h4>
       </div>
       <div class="card-body">
-        {{ $terlambat }}
+        {{ $total['terlambat'] }}
       </div>
     </div>
   </div>

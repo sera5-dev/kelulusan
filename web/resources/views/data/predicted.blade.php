@@ -26,7 +26,7 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($validated_datas as $pd)
+          @foreach($data['validated'] as $pd)
           <tr>
             <td>{{ $loop->iteration }}</td>
             <td>
