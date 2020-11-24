@@ -80,7 +80,7 @@
                   <h4>db</h4>
                 </div>
                 <div class="card-body">
-                  MySQL
+                  MariaDB
                 </div>
               </div>
             </div>
